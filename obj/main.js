@@ -1,8 +1,19 @@
 "use strict";
 exports.__esModule = true;
-var game_object_1 = require("./core/game-object");
-var mc;
-var world = new game_object_1.GameObject();
-var hero = new game_object_1.GameObject();
-world.addChild(hero);
-console.log('Hello World!!');
+var states = [
+    { name: 'Alabama', capital: 'Montgomery' },
+    { name: 'Washington', capital: 'DC' }
+];
+for (var _i = 0, states_1 = states; _i < states_1.length; _i++) {
+    var state = states_1[_i];
+    console.log(state.capital);
+}
+var a = 4;
+console.log(a);
+function add(a, b) {
+    return a + b;
+}
+console.log(concatenate('hola', null));
+function concatenate(a, b) {
+    return a.toLowerCase() + b.toLowerCase();
+}

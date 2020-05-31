@@ -86,42 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./obj/core/game-object.js":
-/*!*********************************!*\
-  !*** ./obj/core/game-object.js ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\nexports.__esModule = true;\nvar vector_3_1 = __webpack_require__(/*! ./vector-3 */ \"./obj/core/vector-3.js\");\nvar GameObject = (function () {\n    function GameObject() {\n        console.log('Creating game object');\n        this.position = new vector_3_1.Vector3();\n        this.children = [];\n    }\n    GameObject.prototype.addChild = function (go) {\n        this.children.push(go);\n    };\n    return GameObject;\n}());\nexports.GameObject = GameObject;\n\n\n//# sourceURL=webpack:///./obj/core/game-object.js?");
-
-/***/ }),
-
-/***/ "./obj/core/vector-2.js":
-/*!******************************!*\
-  !*** ./obj/core/vector-2.js ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\nexports.__esModule = true;\nvar Vector2 = (function () {\n    function Vector2() {\n        this.x = 0;\n        this.y = 0;\n    }\n    return Vector2;\n}());\nexports.Vector2 = Vector2;\n\n\n//# sourceURL=webpack:///./obj/core/vector-2.js?");
-
-/***/ }),
-
-/***/ "./obj/core/vector-3.js":
-/*!******************************!*\
-  !*** ./obj/core/vector-3.js ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\nvar __extends = (this && this.__extends) || (function () {\n    var extendStatics = Object.setPrototypeOf ||\n        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\n        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\n    return function (d, b) {\n        extendStatics(d, b);\n        function __() { this.constructor = d; }\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n    };\n})();\nexports.__esModule = true;\nvar vector_2_1 = __webpack_require__(/*! ./vector-2 */ \"./obj/core/vector-2.js\");\nvar Vector3 = (function (_super) {\n    __extends(Vector3, _super);\n    function Vector3() {\n        var _this = _super !== null && _super.apply(this, arguments) || this;\n        _this.z = 0;\n        return _this;\n    }\n    return Vector3;\n}(vector_2_1.Vector2));\nexports.Vector3 = Vector3;\n\n\n//# sourceURL=webpack:///./obj/core/vector-3.js?");
-
-/***/ }),
-
 /***/ "./obj/main.js":
 /*!*********************!*\
   !*** ./obj/main.js ***!
@@ -130,7 +94,7 @@ eval("\nvar __extends = (this && this.__extends) || (function () {\n    var exte
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nexports.__esModule = true;\nvar game_object_1 = __webpack_require__(/*! ./core/game-object */ \"./obj/core/game-object.js\");\nvar mc;\nvar world = new game_object_1.GameObject();\nvar hero = new game_object_1.GameObject();\nworld.addChild(hero);\nconsole.log('Hello World!!');\n\n\n//# sourceURL=webpack:///./obj/main.js?");
+eval("\nexports.__esModule = true;\nvar states = [\n    { name: 'Alabama', capital: 'Montgomery' },\n    { name: 'Washington', capital: 'DC' }\n];\nfor (var _i = 0, states_1 = states; _i < states_1.length; _i++) {\n    var state = states_1[_i];\n    console.log(state.capital);\n}\nvar a = 4;\nconsole.log(a);\nfunction add(a, b) {\n    return a + b;\n}\nconsole.log(concatenate('hola', null));\nfunction concatenate(a, b) {\n    return a.toLowerCase() + b.toLowerCase();\n}\n\n\n//# sourceURL=webpack:///./obj/main.js?");
 
 /***/ })
 
